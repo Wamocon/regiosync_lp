@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RegioSync – Regionaler Marktplatz. Direkt vom Produzenten.</title>
+  <meta name="description" content="RegioSync verbindet lokale Händler, Landwirte, Handwerker und Produzenten direkt mit regionalen Käufern – ohne Mittelsmänner und ohne Transaktionsgebühren.">
+  <meta name="keywords" content="regionaler marktplatz, lokale produkte kaufen, direkt vom erzeuger, bauernmarkt online, regionale lebensmittel">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="WAMOCON GmbH">
+  <meta name="theme-color" content="#16a34a">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="logo.svg">
+  <link rel="canonical" href="https://www.regiosync.eu/">
+
+  <meta property="og:title" content="RegioSync – Regionaler Marktplatz. Direkt vom Produzenten.">
+  <meta property="og:description" content="RegioSync verbindet lokale Händler, Landwirte, Handwerker und Produzenten direkt mit regionalen Käufern – ohne Mittelsmänner und ohne Transaktionsgebühren.">
+  <meta property="og:image" content="https://www.regiosync.eu/logo.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="RegioSync">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RegioSync – Regionaler Marktplatz. Direkt vom Produzenten.">
+  <meta name="twitter:description" content="Lokale Händler, Landwirte, Handwerker und Produzenten direkt mit regionalen Käufern verbinden – ohne Transaktionsgebühren.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "RegioSync",
+    "applicationCategory": "ShoppingApplication",
+    "operatingSystem": "Web",
+    "description": "Regionaler Marktplatz, der lokale Händler, Landwirte, Handwerker und Produzenten direkt mit regionalen Käufern verbindet – ohne Mittelsmänner und ohne Transaktionsgebühren.",
+    "offers": [
+      {"@type": "Offer", "price": "0", "priceCurrency": "EUR", "description": "Dauerhaft kostenlos"},
+      {"@type": "Offer", "price": "4.99", "priceCurrency": "EUR", "description": "Pro-Tarif pro Monat"}
+    ],
+    "author": {"@type": "Organization", "name": "WAMOCON GmbH"}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Ist RegioSync kostenlos?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Die Basisversion ist dauerhaft kostenlos. Der Pro-Tarif kostet 4,99 EUR pro Monat."}},
+      {"@type": "Question", "name": "Brauche ich eine App?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. RegioSync ist vollständig browserbasiert und funktioniert ohne App-Download auf allen modernen Geräten."}},
+      {"@type": "Question", "name": "Werden Transaktionsgebühren erhoben?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. RegioSync erhebt keine Transaktionsgebühren. Die Bezahlung erfolgt direkt zwischen Käufer und Verkäufer außerhalb der Plattform."}},
+      {"@type": "Question", "name": "Welche Sprachen werden unterstützt?", "acceptedAnswer": {"@type": "Answer", "text": "RegioSync unterstützt Deutsch und Englisch."}}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    :root {
+      --color-bg: #f5f5f7;
+      --color-bg-alt: #eeeef0;
+      --color-surface: #ffffff;
+      --color-border: rgba(0,0,0,.08);
+      --color-border-hover: rgba(0,0,0,.14);
+      --color-border-accent: rgba(22,163,74,.18);
+      --color-accent: #16a34a;
+      --color-accent-dim: #15803d;
+      --color-accent-soft: rgba(22,163,74,.06);
+      --color-text-main: #111113;
+      --color-muted: #555558;
+      --color-faint: #8e8e93;
+      --font-sans: 'Inter', system-ui, sans-serif;
+    }
+    body { font-family: var(--font-sans); background: var(--color-bg); color: var(--color-text-main); }
+  </style>
+</head>
+
+<body class="overflow-x-hidden antialiased leading-relaxed">
+  <div class="gradient-orbs" aria-hidden="true">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="orb orb--3"></div>
+  </div>
+
+  <div class="fixed top-0 left-0 right-0 z-[60] overflow-hidden" style="height:48px;background:#0a0a0c;border-bottom:1px solid rgba(22,163,74,.25);">
+    <div style="display:flex;align-items:center;height:100%;white-space:nowrap;animation:ticker-scroll 18s linear infinite;">
+      <span class="ticker-item">REGIOSYNC &mdash; Lokal. Regional. Direkt.</span>
+      <span class="ticker-item">REGIOSYNC &mdash; Lokal. Regional. Direkt.</span>
+      <span class="ticker-item">REGIOSYNC &mdash; Lokal. Regional. Direkt.</span>
+      <span class="ticker-item">REGIOSYNC &mdash; Lokal. Regional. Direkt.</span>
+    </div>
+  </div>
+
+  <nav class="fixed top-[48px] left-0 right-0 z-50 h-16 flex items-center transition-all duration-400" id="nav">
+    <div class="w-full max-w-[1100px] mx-auto px-5 md:px-10 flex items-center justify-between">
+      <a href="#" class="hover:opacity-70 transition-opacity flex items-center gap-2" style="text-decoration:none;">
+        <img src="logo.svg" alt="RegioSync Icon" style="width:28px;height:28px;">
+        <span style="font-size:1.5rem;font-weight:900;letter-spacing:-0.5px;color:#16a34a;">RegioSync</span>
+      </a>
+      <div class="hidden md:flex items-center gap-4">
+        <div class="nav-links-pill">
+          <a href="#problem" class="nav-link" data-nav-section="problem">Problem</a>
+          <a href="#warum" class="nav-link" data-nav-section="warum">Lösung</a>
+          <a href="#funktionen" class="nav-link" data-nav-section="funktionen">Funktionen</a>
+          <a href="#process" class="nav-link" data-nav-section="process">Prozess</a>
+          <a href="#ablauf" class="nav-link" data-nav-section="ablauf">So geht's</a>
+          <a href="#faq" class="nav-link" data-nav-section="faq">FAQ</a>
+        </div>
+        <a href="https://www.regiosync.eu/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;background:#16a34a;color:#fff;font-size:.8rem;font-weight:700;border-radius:999px;text-decoration:none;">Zur App</a>
+        <div class="flex items-center gap-2 text-sm font-semibold" style="color:var(--color-muted);background:rgba(255,255,255,0.05);padding:6px 12px;border-radius:20px;border:1px solid rgba(255,255,255,0.1);">
+          <a href="index.html" style="color:#16a34a;text-decoration:none;">DE</a>
+          <span style="opacity:0.3">|</span>
+          <a href="index.en.html" class="hover:text-white transition-colors" style="text-decoration:none;">EN</a>
+        </div>
+      </div>
+      <button class="nav-hamburger md:hidden" id="navHamburger" aria-label="Menü"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div id="mobileMenu" aria-hidden="true">
+    <button style="position:absolute;top:18px;right:18px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.2rem;" onclick="closeMobileMenu()">&times;</button>
+    <div class="mm-brand">RegioSync</div>
+    <div class="mm-grid">
+      <a href="#problem" class="mm-link" onclick="closeMobileMenu()">Problem</a>
+      <a href="#warum" class="mm-link" onclick="closeMobileMenu()">Lösung</a>
+      <a href="#funktionen" class="mm-link" onclick="closeMobileMenu()">Funktionen</a>
+      <a href="#process" class="mm-link" onclick="closeMobileMenu()">Prozess</a>
+      <a href="#ablauf" class="mm-link" onclick="closeMobileMenu()">So geht's</a>
+      <a href="#faq" class="mm-link" onclick="closeMobileMenu()">FAQ</a>
+      <a href="#final-cta" class="mm-link" onclick="closeMobileMenu()">Starten</a>
+    </div>
+    <div style="margin-top:2rem;display:flex;justify-content:center;gap:1.5rem;font-size:1.2rem;font-weight:700;">
+      <a href="index.html" style="color:#16a34a;text-decoration:none;">DE</a>
+      <span style="color:var(--color-border);">|</span>
+      <a href="index.en.html" style="color:var(--color-muted);text-decoration:none;">EN</a>
+    </div>
+  </div>
+
+  <section class="relative flex items-center justify-center overflow-hidden pt-[160px] pb-[130px]" id="hero">
+    <canvas id="heroParticles" class="absolute inset-0 z-[1]"></canvas>
+    <div class="absolute inset-0 z-0" style="background:radial-gradient(ellipse 70% 55% at 50% 40%,rgba(22,163,74,.09)0%,transparent 65%),radial-gradient(ellipse 50% 60% at 20% 80%,rgba(22,163,74,.05)0%,transparent 50%),radial-gradient(ellipse 45% 50% at 80% 25%,rgba(5,150,105,.07)0%,transparent 50%);"></div>
+    <div class="absolute inset-0 z-0 opacity-[.06]" style="background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 60% 55% at 50% 50%,black 0%,transparent 70%);"></div>
+
+    <div class="relative z-10 text-center max-w-[960px] px-5">
+      <div class="reveal inline-flex items-center gap-2 px-4 py-2 rounded-full mb-7" style="background:rgba(22,163,74,.12);border:1px solid rgba(22,163,74,.35);">
+        <img src="logo.svg" alt="RegioSync" style="width:16px;height:16px;">
+        <span style="font-size:.8rem;font-weight:700;color:#15803d;letter-spacing:.06em;text-transform:uppercase;">Kein Mittelsmann. Keine Transaktionsgebühren. Kostenlos starten.</span>
+      </div>
+
+      <h1 class="reveal text-3xl md:text-7xl lg:text-8xl font-bold leading-[1.08] tracking-tight mb-6">
+        Regionaler Marktplatz.<br><span class="gradient-text">Direkt. Lokal. Ohne Gebühren.</span>
+      </h1>
+      <p class="reveal text-lg md:text-xl max-w-[680px] mx-auto leading-relaxed" style="color:var(--color-muted);">
+        RegioSync verbindet lokale Händler, Landwirte, Handwerker und Produzenten direkt mit regionalen Käufern – über eine interaktive Karte und ohne Transaktionsgebühren.
+      </p>
+
+      <div class="reveal mt-10 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="https://www.regiosync.eu/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 30px;background:#16a34a;color:#fff;font-size:.95rem;font-weight:700;border-radius:12px;text-decoration:none;transition:all .25s ease;box-shadow:0 4px 24px rgba(22,163,74,.3);">Zur App</a>
+      </div>
+
+      <p class="reveal mt-5 text-sm" style="color:#8e8e93;">Dauerhaft kostenlos. Keine Transaktionsgebühren. Interaktive Karte.</p>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-[120px] z-20" style="background:linear-gradient(to bottom, transparent, #0f1117);"></div>
+  </section>
+
+  <section class="relative section-dark" id="problem" style="padding:6.5rem 0 5rem;margin-top:-2px;">
+    <div class="max-w-[1100px] mx-auto px-5 md:px-10">
+      <h2 class="reveal text-4xl md:text-6xl font-black leading-[1.05] tracking-tight mb-6" style="color:#f0f0f2;">
+        Regionaler Handel braucht<br><span style="color:#16a34a;">direkte Verbindungen</span>
+      </h2>
+      <p class="reveal text-lg max-w-[620px] leading-relaxed mb-16" style="color:#9a9aaa;">RegioSync macht regionale Produkte für alle sichtbar – Käufer finden lokale Produzenten, Verkäufer erreichen ihre Region direkt, und die Plattform bleibt dauerhaft kostenfrei zugänglich.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="reveal text-center p-8 rounded-2xl" style="background:rgba(22,163,74,.07);border:1px solid rgba(22,163,74,.25);">
+          <span class="block stat-value font-black leading-none mb-3 tabular-nums" style="color:#16a34a;" data-target="10">0</span>
+          <span class="block text-lg font-semibold mb-1" style="color:#f0f0f2;">Produktkategorien</span>
+          <span class="block text-xs" style="color:#7a7a88;">Obst, Gemüse, Milch, Fleisch, Backwaren, Honig, Eier, Kräuter, Getränke und mehr</span>
+        </div>
+        <div class="reveal text-center p-8 rounded-2xl" style="background:rgba(22,163,74,.07);border:1px solid rgba(22,163,74,.25);">
+          <span class="block stat-value font-black leading-none mb-3 tabular-nums" style="color:#16a34a;" data-target="0" data-suffix=" EUR">0</span>
+          <span class="block text-lg font-semibold mb-1" style="color:#f0f0f2;">dauerhaft kostenlos</span>
+          <span class="block text-xs" style="color:#7a7a88;">Die Basisversion ist dauerhaft kostenlos nutzbar</span>
+        </div>
+        <div class="reveal text-center p-8 rounded-2xl" style="background:rgba(22,163,74,.07);border:1px solid rgba(22,163,74,.25);">
+          <span class="block text-xs font-semibold mb-2 uppercase tracking-[0.12em]" style="color:#15803d;">ab</span>
+          <span class="block stat-value font-black leading-none mb-1 tabular-nums" style="color:#16a34a;" data-target="499" data-prefix="" data-suffix="">499</span>
+          <span class="block text-sm font-semibold mb-2" style="color:#d3d3da;">Cent / Monat</span>
+          <span class="block text-lg font-semibold mb-1" style="color:#f0f0f2;">Pro-Tarif</span>
+          <span class="block text-xs" style="color:#7a7a88;">4,99 EUR pro Monat – alle Funktionen freigeschaltet</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 md:py-32 section-dark" id="warum" style="background:#050508;">
+    <div class="max-w-[1100px] mx-auto px-5 md:px-10">
+      <div class="text-center mb-14">
+        <h2 class="reveal text-3xl md:text-5xl font-bold leading-[1.1] tracking-tight mb-5" style="color:#f0f0f2;">Warum RegioSync</h2>
+        <p class="reveal text-lg max-w-[650px] mx-auto leading-relaxed" style="color:#9999a1;">Vier klare Vorteile für Käufer und Verkäufer, die regionale Produkte direkt und ohne Umwege handeln wollen.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="reveal p-7 rounded-2xl card-hover" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);">
+          <h3 class="text-xl font-bold mb-3" style="color:#f0f0f2;">Direkte Verbindung</h3>
+          <p style="color:#9a9aaa;">Direkt mit Produzenten kommunizieren – ohne Plattform-Transaktionsgebühren.</p>
+        </div>
+        <div class="reveal p-7 rounded-2xl card-hover" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);">
+          <h3 class="text-xl font-bold mb-3" style="color:#f0f0f2;">Karte statt Suche</h3>
+          <p style="color:#9a9aaa;">Alle regionalen Shops auf einer Live-Karte sehen und zu ihnen navigieren.</p>
+        </div>
+        <div class="reveal p-7 rounded-2xl card-hover" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);">
+          <h3 class="text-xl font-bold mb-3" style="color:#f0f0f2;">Lokal entdecken</h3>
+          <p style="color:#9a9aaa;">Shops und Produkte aus der unmittelbaren Nachbarschaft entdecken und die regionale Gemeinschaft unterstützen.</p>
+        </div>
+        <div class="reveal p-7 rounded-2xl card-hover" style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);">
+          <h3 class="text-xl font-bold mb-3" style="color:#f0f0f2;">Community aufbauen</h3>
+          <p style="color:#9a9aaa;">Shops und Produkte bewerten und der Community bei Entscheidungen helfen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="funktionen" class="py-24 section-alt">
+    <div class="max-w-[1100px] mx-auto px-5 md:px-10">
+      <div class="text-center mb-14">
+        <h2 class="reveal text-3xl md:text-5xl font-bold tracking-tight mb-4">Kernfunktionen, die verbinden</h2>
+        <p class="reveal text-lg max-w-[680px] mx-auto" style="color:var(--color-muted);">Alle wichtigen Funktionen von RegioSync auf einen Blick – für Käufer und Verkäufer gleichermaßen.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <article class="reveal p-7 rounded-2xl bg-white border card-hover accent-hover">
+          <h3 class="text-xl font-bold mb-3">Shops &amp; Produkte</h3>
+          <p style="color:var(--color-muted);">Lokale Shops mit Produkten, Preisen und Kategorien auf einen Blick – Obst, Gemüse, Milch, Fleisch, Backwaren, Honig, Eier, Kräuter, Getränke und mehr.</p>
+        </article>
+        <article class="reveal p-7 rounded-2xl bg-white border card-hover accent-hover">
+          <h3 class="text-xl font-bold mb-3">Interaktive Karte</h3>
+          <p style="color:var(--color-muted);">Alle Shops auf einer OpenStreetMap-Karte – mit Klick auf Markierungen, GPS-Standort und Routenbeschreibung (Pro).</p>
+        </article>
+        <article class="reveal p-7 rounded-2xl bg-white border card-hover accent-hover">
+          <h3 class="text-xl font-bold mb-3">Bewertungssystem</h3>
+          <p style="color:var(--color-muted);">Shops und Produkte mit 1–5 Sternen und Textkommentar bewerten – damit die Community bessere Entscheidungen trifft.</p>
+        </article>
+        <article class="reveal p-7 rounded-2xl bg-white border card-hover accent-hover">
+          <h3 class="text-xl font-bold mb-3">Direktanfragen</h3>
+          <p style="color:var(--color-muted);">Produktanfragen direkt an Verkäufer senden – mit Status Ausstehend, Angenommen oder Abgelehnt. Keine Transaktionsgebühren.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 section-dark" id="process" style="background:#090a0e;">
+    <div class="max-w-[1100px] mx-auto px-5 md:px-10">
+      <div class="text-center mb-10">
+        <h2 class="reveal text-3xl md:text-5xl font-bold tracking-tight mb-4" style="color:#f0f0f2;">Vom Produzenten direkt zu dir</h2>
+        <p class="reveal text-lg max-w-[760px] mx-auto" style="color:#a2a2ab;">Das Ziel von RegioSync: regionalen Handel transparent und direkt machen. Der Ablauf unten zeigt den Weg von der Registrierung bis zum ersten lokalen Kauf.</p>
+      </div>
+      <div class="reveal process-shell" id="processFlow">
+        <div class="process-track">
+          <div class="process-track__bar" id="processFlowBar"></div>
+          <div class="process-track__dot" id="processFlowDot"></div>
+        </div>
+        <div class="process-grid">
+          <article class="process-step process-step--active" tabindex="0">
+            <div class="process-step__index">01</div>
+            <h3 class="process-step__title">Kostenlos registrieren</h3>
+            <p class="process-step__text">Konto mit E-Mail erstellen und Rolle wählen: Käufer oder Verkäufer. Die Basisversion ist dauerhaft kostenlos.</p>
+            <p class="process-step__hint">Zum Aufklappen klicken</p>
+            <div class="process-step__more">Als Verkäufer legst du deinen Shop direkt an und listest deine Produkte mit Preisen und Kategorien auf.</div>
+          </article>
+          <article class="process-step" tabindex="0">
+            <div class="process-step__index">02</div>
+            <h3 class="process-step__title">Shops entdecken</h3>
+            <p class="process-step__text">Lokale Shops auf der interaktiven Karte oder in der Listenansicht durchsuchen und filtern.</p>
+            <p class="process-step__hint">Zum Aufklappen klicken</p>
+            <div class="process-step__more">Die OpenStreetMap-Karte zeigt alle Shops in der Nähe mit Markierungen. Klick auf die Markierung öffnet Shop-Details.</div>
+          </article>
+          <article class="process-step" tabindex="0">
+            <div class="process-step__index">03</div>
+            <h3 class="process-step__title">Direkt anfragen</h3>
+            <p class="process-step__text">Produktanfragen direkt an Verkäufer senden – ohne Mittelsmann und ohne Transaktionsgebühren.</p>
+            <p class="process-step__hint">Zum Aufklappen klicken</p>
+            <div class="process-step__more">Der Verkäufer sieht die Anfrage in seinem Dashboard und kann sie annehmen oder ablehnen. Die Bezahlung erfolgt direkt zwischen Käufer und Verkäufer.</div>
+          </article>
+          <article class="process-step" tabindex="0">
+            <div class="process-step__index">04</div>
+            <h3 class="process-step__title">Bewertung hinterlassen</h3>
+            <p class="process-step__text">Erfahrungen mit 1–5 Sternen und Textkommentar teilen und der Community helfen.</p>
+            <p class="process-step__hint">Zum Aufklappen klicken</p>
+            <div class="process-step__more">Bewertungen stärken das Vertrauen in der Community und helfen anderen Käufern, die besten lokalen Produzenten zu finden.</div>
+          </article>
+        </div>
+        <p class="process-target"><strong>Ziel:</strong> Regionale Produzenten und Käufer direkt verbinden – ohne Mittelsmänner, ohne Transaktionsgebühren.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 section-dark" style="background:#0f1117;" id="ablauf">
+    <div class="max-w-[1000px] mx-auto px-5 md:px-10">
+      <div class="text-center mb-12">
+        <h2 class="reveal text-3xl md:text-5xl font-bold tracking-tight mb-4" style="color:#f0f0f2;">So funktioniert es in 3 Schritten</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="reveal p-7 rounded-2xl" style="background:rgba(22,163,74,.08);border:1px solid rgba(22,163,74,.25);">
+          <span class="text-sm font-bold uppercase tracking-wider" style="color:#15803d;">Schritt 1</span>
+          <h3 class="text-xl font-bold mt-2 mb-2" style="color:#f0f0f2;">Registrieren</h3>
+          <p style="color:#9a9aaa;">Konto kostenlos mit E-Mail erstellen und Rolle wählen: Käufer oder Verkäufer.</p>
+        </div>
+        <div class="reveal p-7 rounded-2xl" style="background:rgba(22,163,74,.08);border:1px solid rgba(22,163,74,.25);">
+          <span class="text-sm font-bold uppercase tracking-wider" style="color:#15803d;">Schritt 2</span>
+          <h3 class="text-xl font-bold mt-2 mb-2" style="color:#f0f0f2;">Entdecken</h3>
+          <p style="color:#9a9aaa;">Shops auf der interaktiven Karte oder in der Liste finden und Produkte durchstöbern.</p>
+        </div>
+        <div class="reveal p-7 rounded-2xl" style="background:rgba(22,163,74,.08);border:1px solid rgba(22,163,74,.25);">
+          <span class="text-sm font-bold uppercase tracking-wider" style="color:#15803d;">Schritt 3</span>
+          <h3 class="text-xl font-bold mt-2 mb-2" style="color:#f0f0f2;">Verbinden</h3>
+          <p style="color:#9a9aaa;">Direkt mit Produzenten kommunizieren – ohne Mittelsmänner und ohne Transaktionsgebühren.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24" id="faq">
+    <div class="max-w-[900px] mx-auto px-5 md:px-10">
+      <div class="text-center mb-10">
+        <h2 class="reveal text-3xl md:text-5xl font-bold tracking-tight mb-4">Häufige Fragen</h2>
+      </div>
+      <div id="faqList" class="rounded-2xl bg-white border overflow-hidden">
+        <div class="faq-item">
+          <button class="faq-question w-full text-left px-6 py-5 flex items-center justify-between">
+            <span class="font-semibold">Ist RegioSync kostenlos?</span>
+            <span class="faq-question__icon relative w-5 h-5"></span>
+          </button>
+          <div class="faq-answer px-6 pb-5" style="color:var(--color-muted);">Ja. Die Basisversion ist dauerhaft kostenlos. Der Pro-Tarif kostet 4,99 EUR pro Monat (oder 47.99 EUR pro Jahr) und schaltet alle Funktionen frei.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question w-full text-left px-6 py-5 flex items-center justify-between">
+            <span class="font-semibold">Brauche ich eine App?</span>
+            <span class="faq-question__icon relative w-5 h-5"></span>
+          </button>
+          <div class="faq-answer px-6 pb-5" style="color:var(--color-muted);">Nein. RegioSync ist vollständig browserbasiert und funktioniert ohne App-Download auf allen modernen Geräten.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question w-full text-left px-6 py-5 flex items-center justify-between">
+            <span class="font-semibold">Werden Transaktionsgebühren erhoben?</span>
+            <span class="faq-question__icon relative w-5 h-5"></span>
+          </button>
+          <div class="faq-answer px-6 pb-5" style="color:var(--color-muted);">Nein. RegioSync erhebt keine Transaktionsgebühren. Die Bezahlung erfolgt direkt zwischen Käufer und Verkäufer außerhalb der Plattform.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question w-full text-left px-6 py-5 flex items-center justify-between">
+            <span class="font-semibold">Welche Sprachen werden unterstützt?</span>
+            <span class="faq-question__icon relative w-5 h-5"></span>
+          </button>
+          <div class="faq-answer px-6 pb-5" style="color:var(--color-muted);">RegioSync unterstützt Deutsch und Englisch.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 section-dark" id="final-cta" style="background:#050508;">
+    <div class="max-w-[900px] mx-auto px-5 md:px-10 text-center">
+      <h2 class="reveal text-3xl md:text-5xl font-black leading-[1.1] mb-5" style="color:#f0f0f2;">Jetzt regional einkaufen und verkaufen.</h2>
+      <p class="reveal text-lg max-w-[620px] mx-auto mb-9" style="color:#9a9aaa;">Kostenlos starten. Keine Transaktionsgebühren. Direkt mit Produzenten verbinden.</p>
+      <div class="reveal flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="https://www.regiosync.eu/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;justify-content:center;padding:14px 30px;background:#16a34a;color:#fff;font-weight:700;border-radius:12px;text-decoration:none;">Jetzt RegioSync entdecken</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#050508;color:#8e8e93;padding:32px 20px 40px;text-align:center;border-top:1px solid rgba(255,255,255,.08);">
+    <div class="flex items-center justify-center gap-2 mb-2">
+      <img src="logo.svg" alt="RegioSync" style="width:18px;height:18px;opacity:.85;">
+      <span style="font-weight:700;color:#f0f0f2;">RegioSync</span>
+    </div>
+    <p style="font-size:.9rem;">Regionaler Marktplatz. Direkt vom Produzenten. Ohne Transaktionsgebühren.</p>
+    <div style="margin-top:12px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;font-size:.85rem;">
+      <a href="https://www.regiosync.eu/" target="_blank" rel="noopener noreferrer" style="color:#86efac;text-decoration:none;">App öffnen</a>
+      <a href="impressum.html" style="color:#86efac;text-decoration:none;">Impressum</a>
+      <a href="agb.html" style="color:#86efac;text-decoration:none;">AGB</a>
+      <a href="datenschutz.html" style="color:#86efac;text-decoration:none;">Datenschutz</a>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Nach oben">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie-Hinweis">
+    <div class="cookie-banner__inner">
+      <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:.45rem;">Hinweis zu lokalem Speicher</h3>
+      <p style="font-size:.92rem;line-height:1.6;color:#4d4d55;">RegioSync nutzt lokalen Browser-Speicher, um Sitzungsdaten zu erhalten. Es werden keine Werbetrackers eingesetzt.</p>
+      <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:1rem;flex-wrap:wrap;">
+        <button class="cookie-banner__btn cookie-banner__btn--reject" data-cookie-action="reject">Schließen</button>
+        <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie-action="accept">Verstanden</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
